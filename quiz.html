@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            background-image: url('lluvia.gif');
+            /* Coloca aquí el GIF de fondo */
+        }
+        
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .eye-circle {
+            width: 550px;
+            height: 550px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 30px;
+        }
+        
+        .eye-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text-section {
+            text-align: left;
+        }
+        
+        .text-section h1 {
+            font-family: 'Georgia', serif;
+            font-size: 4em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .text-section h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 5px;
+        }
+        
+        .buttons button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 326.2px;
+            margin: 8px 0;
+            background-color: white;
+            color: black;
+            font-size: 1em;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            /* Borde gris claro */
+            border-radius: 15px;
+            /* Bordes más pronunciados */
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Sombra */
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .buttons button:hover {
+            background-color: rgb(253, 251, 251);
+            border-color: #888;
+            /* Cambio de color del borde al pasar el cursor */
+        }
+        
+        .buttons button img {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: white;
+            border-radius: 50%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            border: 1px solid #ccc;
+        }
+        /* Estilo para la línea horizontal */
+        
+        .buttons hr {
+            width: 324px;
+            padding-left: 0px;
+            margin-left: 0px;
+            border: none;
+            border-top: 2px solid white;
+            /* Línea blanca */
+        }
+        
+        .legal {
+            font-size: 0.69em;
+            color: #ccc;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        .legal a {
+            color: blue;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .legal span {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Círculo con imagen del ojo -->
+        <div class="eye-circle">
+            <img src="1.jfif" alt="Imagen del Ojo">
+        </div>
+
+        <!-- Sección de texto y botones -->
+        <div class="text-section">
+            <!-- Título -->
+            <h1>Lo que ocurre en<br>este momento. <br>
+                <h2>Unete</h2>
+            </h1>
+
+
+            <!-- Sección de botones -->
+            <div class="buttons">
+                <button>
+                    <img src="facebook.png" alt="Facebook"> <!-- Icono de Facebook -->
+                    Regístrate con Facebook
+                </button>
+                <button>
+                    <img src="google.png" alt="Google"> <!-- Icono de Google -->
+                    Regístrate con Google
+                </button>
+
+                <!-- Línea blanca ajustada entre los botones -->
+                <hr>
+
+                <button>Crear Cuenta</button>
+            </div>
+
+            <!-- Texto legal -->
+            <p class="legal">
+                Al registrarte, aceptas los <a href="#">Términos de servicio</a> y la <a href="#">Política de <br> privacidad</a>, incluida la <a href="#">Política de Cookies</a>.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
